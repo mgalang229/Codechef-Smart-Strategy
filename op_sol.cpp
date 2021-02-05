@@ -1,8 +1,6 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-
-const long long inf = 1e18;
                                                    
 int main() {                            
   ios::sync_with_stdio(false);
@@ -30,19 +28,19 @@ int main() {
   	for (int i = 0; i < q; i++) {
   		cin >> x[i];
   	}
-		for (int i = 0; i < q; i++) {
-			if (!reached_limit) {
-				// if the total divisor is less than or equal to the max dividend,
-				// then divide normally
-				cout << x[i] / divisor;
-			} else {
-				// otherwise, print 0 since a numerator divided by a greater denominator
-				// will ways product 0 as its output
-        cout << 0;
-			}
-			cout << " ";
+	for (int i = 0; i < q; i++) {
+		if (!reached_limit) {
+			// if the total divisor is less than or equal to the max dividend,
+			// then divide normally
+			cout << x[i] / divisor;
+		} else {
+			// otherwise, print 0 since a numerator divided by a greater denominator
+			// will ways product 0 as its output
+        		cout << 0;
 		}
+		cout << " ";
+	}
   	cout << '\n';
- 	}
+  }
   return 0;
 }      
